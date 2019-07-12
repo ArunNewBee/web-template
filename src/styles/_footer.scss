@@ -1,0 +1,86 @@
+footer {
+    @include imgurl(footer-img);
+
+    .top {
+        @include dispGrid(1fr 2fr, 20px);
+        padding-bottom: 10px;
+        border-bottom: 1px solid $color5;
+        .logo {
+            width: 120px;
+        }
+        nav {
+            justify-self: end;
+            align-self: end;
+            ul {
+                margin: 0;
+                display: flex;
+                li {
+                  flex-flow: 1;
+                  list-style: none;
+                  margin-right: 10px;
+                  &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    color: $color1;
+                    text-decoration: none;
+                }
+                }
+            }
+    }
+    
+}
+.bottom {
+    @include dispGrid(repeat(3, 1fr), 20px);
+    padding-top: 20px;
+
+    p {
+        color: $color1;
+        line-height: 20px;
+        padding-top: 25px;
+    }
+    h3 {
+        color: $color1;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 900;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            list-style: none;
+            color: $color1;
+            line-height: 20px;
+        }
+    }
+    .textfield {
+        width: calc(100% - 30px);
+        height: 25px;
+        border: none;
+        padding: 5px 15px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    .subscribe {
+        background-color: $buttonBG;
+        padding: 10px 35px;
+        color: $color1;
+        font-size: 12px;
+        border: none;
+        margin-top: 20px;
+        transition: all 1s;
+
+        &:hover {
+            cursor: pointer;
+            color: $color4;
+            transition: all 1s;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+}

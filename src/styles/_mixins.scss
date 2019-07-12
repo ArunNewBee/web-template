@@ -1,0 +1,14 @@
+@mixin dispGrid($column, $gap) {
+    display: grid;
+    grid-template-columns: $column;
+    grid-gap: $gap;
+  }
+  @mixin imgurl($image) {
+  background: linear-gradient(
+        to bottom,
+        rgba(0,0,0, 0.85),
+        rgba(0,0,0, 0.85)
+      ),url('../images/'+$image+'.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }

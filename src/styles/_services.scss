@@ -1,0 +1,37 @@
+.services-banner {
+    @include imgurl(services-banner);
+}
+.serv-para {
+    max-width: 300px;
+    margin: 10px auto;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 100;
+}
+.services-section {
+    @include dispGrid(repeat(2, 1fr), 0px);
+    
+   .article {
+       align-self: center;
+       p {
+        padding-right: 30px;
+        line-height: 20px;
+       }
+       h2 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+   }
+
+   .article:nth-child(2n){
+
+    p {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+    h2 {
+        padding-left: 30px;
+    }
+}
+   
+}
